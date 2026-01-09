@@ -1,4 +1,4 @@
-﻿#include "includes/inc_class.h"
+﻿#include "includes/inh_class.h"
 
 #ifdef _WIN32
 	#include <windows.h>
