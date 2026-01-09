@@ -12,7 +12,8 @@ endif()
 project ("practice")
 
 # Добавьте источник в исполняемый файл этого проекта.
-add_executable (${PROJECT_NAME} "main.cpp" "includes/inh_class.h")
+add_executable (${PROJECT_NAME} "main.cpp" "includes/inh_class.h"
+        includes/post_prefix_inc.h)
 
 # Проверка на соотвествие поддержки версии cmake и поддержка компилятором стандрата языка
 target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_20)
