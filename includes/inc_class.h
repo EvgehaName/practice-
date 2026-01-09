@@ -12,13 +12,13 @@ protected:
 public:
 	Animal(std::string name, int age) : _name(name), _age(age) {}
 
-	virtual std::string getAnimal() const // Виртуальная неизменяемая функция (за счет const)
+	virtual std::string getAnimal() const // Р’РёСЂС‚СѓР°Р»СЊРЅР°СЏ РЅРµРёР·РјРµРЅСЏРµРјР°СЏ С„СѓРЅРєС†РёСЏ (Р·Р° СЃС‡РµС‚ const)
 	{ 
 		return _name + " " + std::to_string(_age);
 	}
 };
 
-class Cat : public Animal // Наследование + Инкапсуляция + Полиморфизм
+class Cat : public Animal // РќР°СЃР»РµРґРѕРІР°РЅРёРµ + РРЅРєР°РїСЃСѓР»СЏС†РёСЏ + РџРѕР»РёРјРѕСЂС„РёР·Рј
 {
 private:
 	std::string _type;
