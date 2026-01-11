@@ -13,7 +13,7 @@ void practiceInhClass() {
 	std::cout << dog.getAnimal() << std::endl;
 }
 
-void practicePostPrefix(int prefix, int postfix) {
+void practicePostPrefix(int& prefix, int& postfix) {
 	Prefix_Postfix post_prefix(prefix, postfix);
 }
 
@@ -26,7 +26,9 @@ int main()
 #endif // _WIN32
 	// *** Работа с классами ***
 	//practiceInhClass();
-	// *** Работа с пост и префикс инкремент ***
-	practicePostPrefix(5, 5);
+	// *** Работа с пост и префикс инкремент + указатели ***
+	int n = 5;
+	practicePostPrefix(n, n);
+
 	return 0;
 }
